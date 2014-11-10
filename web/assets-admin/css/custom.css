@@ -1,0 +1,762 @@
+/* CLASS CONVENTIONS */
+/*
+
+fg- prefix stands for FitGid if needed...
+
+*/
+
+body,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Open Sans","Arial",sans-serif;
+}
+
+/* SIDEBAR */
+.wrapper aside {
+    background: #ffffff;
+}
+
+aside .sidebar-in {
+    border-right: 1px solid hsl(0, 0%, 87%);
+}
+
+.wrapper aside header {
+    height: 77px;
+
+    background: #ffffff;
+    border-bottom: 1px solid hsl(0, 0%, 87%);
+}
+
+.wrapper aside header .togglemenu {
+    font-size: 20px;
+
+    background: none;
+}
+
+aside.sidebarhidden header .togglemenu {
+    margin-left: -2px;
+}
+
+.navi-acc a {
+    /*color: hsl(199, 93%, 12%) !important;*/
+    color: hsl(240, 4%, 62%) !important;
+    font-family: "Open Sans","Arial",sans-serif;
+
+    background: none;
+}
+
+.navi-acc > li {
+    border-bottom: 1px solid hsl(0, 0%, 87%);
+}
+
+.navi-acc li.active > a,
+.navi-acc li:hover > a {
+    /*background: #e3e3e3;*/
+    background: #F4F4F4;
+}
+
+.navi-acc li ul {
+    background: #ffffff;
+}
+
+.navi-acc li.active > a {
+    /*background: #e3e3e3;*/
+    /*background: #F4F4F4;*/
+    background: #FFffff;
+
+    border-bottom: 1px solid hsl(0, 0%, 87%);
+}
+
+.navi-acc li ul li:hover a {
+    color: hsl(199, 93%, 12%) !important;
+
+    /*background: #e3e3e3;*/
+    background: #F4F4F4;
+}
+
+.sidebar .logo {
+    margin-top: -2px;
+}
+
+.sidebar .logo .logo__text {
+    margin-bottom: 0;
+
+    color: hsl(199, 93%, 12%);
+    font-size: 16px;
+}
+
+.sidebar .logo__back {
+    display: block;
+
+    color: hsl(198, 95%, 47%);
+    font-size: 12px;
+    text-decoration: underline;
+    transition: color 0.1s ease-in 0s;
+}
+
+.sidebar .logo__back:hover {
+    text-decoration: none;
+}
+
+/* HEADER */
+.right-sec > header {
+    background: #ffffff;
+    border-bottom: 1px solid hsl(0, 0%, 87%);
+}
+
+.user .welcome h5 a:hover {
+    text-decoration: underline;
+}
+
+.topnav > ul > li > a,
+.user .welcome p, .user .welcome h5,
+.user .welcome h5 a {
+    color: hsl(199, 93%, 12%);
+}
+
+.user figure {
+    border-color: hsl(0, 0%, 87%);
+}
+
+.btn-main-action {
+    margin-top: 10px;
+}
+
+/* INDEX PAGE */
+.right-sec > header .logo-wrapper {
+    float: left;
+
+    margin-right: 30px;
+}
+
+.right-sec > header .logo-wrapper .logo {
+    float: left;
+
+    height: 56px;
+    max-width: 45px;
+    margin: 0px 15px 0px 0px;
+
+    line-height: 56px;
+}
+
+.right-sec > header .logo-wrapper .logo img {
+    max-width: 100%;
+}
+
+.right-sec > header .logo__text {
+    color: #f9f9f9;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.right-sec > header .logo-wrapper .site-name {
+    float: left;
+
+    margin-top: 15px;
+    padding-top: 2px;
+}
+
+.right-sec > header .logo-wrapper .site-name .brand {
+    color: hsl(199, 93%, 12%);
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.right-sec > header .user {
+    float: right;
+
+    margin-left: 20px;
+}
+
+.right-sec > header .info {
+    float: left;
+}
+
+.right-sec > header .info .site-email,
+.right-sec > header .info .site-phone {
+    float: left;
+
+    margin-top: 15px;
+    padding: 5px 10px;
+
+    color: hsl(0, 0%, 44%);;
+}
+
+.right-sec > header .info .site-email a {
+    color: hsl(0, 0%, 44%);
+}
+
+.right-sec > header .info .glyphicon {
+    margin-right: 10px;
+}
+
+/* INBOX PAGE */
+
+
+/* CALENDAR PAGE */
+.fullcalendar-box .full-calendar {
+    float: left;
+    width: 100%;
+    border-left: hsl(210, 4%, 91%) 1px solid;
+}
+
+.fg-calendar-options {
+    margin: 20px 0 5px 0;
+}
+
+.fg-calendar-options__select {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+/* CALENDAR POPOVER */
+.calendar-container .fc-event {
+    z-index: 1;
+}
+.calendar-container .cell-popover {
+    position: absolute;
+    top: 24px;
+    z-index: 1000;
+
+    width: 300px;
+
+    color: hsl(0, 0%, 13%);
+
+    background: hsl(0, 100%, 100%);
+    border-radius: 5px;
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.5);
+
+    cursor: default;
+}
+
+.calendar-container .cell-popover-header {
+    padding: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    /*background: hsl(0, 0%, 89%);*/
+    background: hsl(202, 69%, 46%);
+    border-radius: 5px 5px 0 0;
+}
+
+.calendar-container .cell-popover-header a {
+    /*color: hsl(198, 95%, 47%);*/
+    color: hsl(0, 100%, 100%);
+}
+
+.calendar-container .cell-popover-body {
+    padding: 15px 10px 5px 10px;
+
+    font-size: 14px;
+}
+
+.calendar-container .cell-popover-body p {
+    /*line-height: 1.2em;*/
+}
+
+/* MANAGER EVENTS */
+.manager-events {
+    left: 20px;
+    position: absolute;
+    top: 10px;
+
+    float: left;
+    width: 220px;
+
+    background: #F4F4F4;
+}
+
+.manager-events-2 {
+    top: 490px;
+}
+
+.manager-events h5 {
+    margin: 0;
+    padding: 10px;
+
+    color: #ffffff;
+    font-weight: normal;
+
+    /*background: #2489C5;*/
+    /*background: #FFA500;*/
+    background: hsl(224, 13%, 23%);
+}
+
+.manager-events .btn {
+    display: block;
+    margin: 0 auto 5px auto;
+    width: 80%;
+}
+
+.manager-events__body {
+    padding: 10px;
+    width: 100%;
+}
+
+.manager-events__name {
+    font-weight: bold;
+}
+
+.manager-events__title {
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid hsl(60, 2%, 88%);
+}
+
+.manager-events__table {
+    width: 100%;
+}
+
+.manager-events__table tr.is-selected {
+    background: hsl(190, 50%, 85%);
+}
+
+.manager-events__table tr td {
+    padding: 3px 0 3px 5px;
+    width: 50%;
+}
+
+.manager-events__controls {
+    padding-top: 15px;
+
+    border-top: 1px solid hsl(60, 2%, 88%);
+}
+
+
+/* COMPANY PLACES */
+.table-list__link {
+    color: hsl(208, 56%, 53%);
+    text-decoration: underline;
+}
+
+.table-list__link:hover {
+    text-decoration: none;
+}
+
+
+/* PROFILE */
+.avatar-container img {
+    margin-right: 42px;
+}
+
+textarea.personal-description {
+    min-height: 100px;
+    padding: 6px 12px;
+    width: 100%;
+
+    border: 1px solid hsl(60, 2%, 88%);
+    resize: vertical;
+}
+
+.tab-content .sec-box {
+    border-top: 1px solid hsl(0, 0%, 96%);
+}
+
+/* MISC */
+.tag-input-container {
+    overflow: hidden;
+    position: relative;
+
+    height: 34px;
+    width: 100%;
+
+    border: 1px solid hsl(60, 2%, 88%);
+
+    /*background: #ff4444;*/
+}
+
+.tag-container {
+    float: left;
+
+    height: 34px;
+    width: auto;
+}
+
+.tag-body {
+    float: left;
+    position: relative;
+
+    padding: 6px 0 0 5px;
+    width: auto;
+}
+
+.tag-body .label-tag {
+    padding-right: 25px;
+}
+
+.tag-body .fa {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+.input-container {
+    overflow: hidden;
+
+    width: auto;
+}
+
+.input-container input {
+    height: 34px;
+    padding: 0 10px;
+    width: 100%;
+
+    border: none;
+    outline: none;
+}
+
+.select-25 { width: 25%; }
+.select-50 { width: 50%; }
+
+.profile-help-text {
+    /*color: #999;*/
+    color: #428BCA;
+    font-size: 11px;
+}
+
+.radio-pair label {
+    margin-bottom: 0;
+    margin-right: 7px;
+
+    font-weight: normal;
+}
+
+.radio-pair input[type="radio"] {
+    margin-right: 15px;
+}
+
+.heading-link a {
+    color: hsl(198, 95%, 47%);
+    text-decoration: underline;
+}
+
+.heading-link a:hover {
+    text-decoration: none;
+}
+
+.add-zone {
+    /*float: left;*/
+
+    width: 100%;
+}
+
+.add-zone + .add-zone {
+    margin-top: 15px;
+}
+
+.add-zone .btn {
+    width: 170px;
+
+    /*text-align: left;*/
+}
+
+.btn .caret {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.col-xs-3.vertical-tabs,
+.col-xs-9.vertical-tabs {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-xs-9.vertical-tabs {
+    margin-top: 10px;
+}
+
+.vertical-tabs .nav-tabs {
+    width: 170px;
+
+    border-right: none;
+}
+
+.vertical-tabs .nav-tabs > li > a {
+    height: auto;
+    padding: 6px 12px;
+
+    color: hsl(225, 4%, 44%);
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.vertical-tabs label {
+    font-weight: normal;
+}
+
+.add-record-btn {
+    margin-bottom: 20px;
+}
+
+.save-record-btn {
+    margin-top: 20px;
+}
+
+.edit-manager-name {
+    margin: 0;
+}
+
+.cell-image-container {
+    width: 100%;
+}
+
+.cell-filter-container {
+    padding-left: 30px;
+    position: relative;
+}
+
+.cell-filter-container .glyphicon {
+    left: 0;
+    position: absolute;
+    top: 6px;
+
+    font-size: 20px;
+}
+
+table .cell-result {
+    cursor: pointer;
+}
+
+table .cell-wrap {
+    position: relative;
+    font-size: 12px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.cell-list {
+    margin-bottom: 0;
+}
+
+.cell-list li {
+    margin: 5px 0;
+}
+
+.cell-list li .glyphicon-remove-circle {
+    margin-left: 5px;
+
+    color: hsl(225, 4%, 70%);
+    font-size: 15px;
+    vertical-align: text-top;
+
+    cursor: pointer;
+
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.cell-list li .glyphicon-remove-circle:hover {
+    color: hsl(2, 64%, 58%);
+}
+
+
+/* CELL POPOVER */
+.cell-popover {
+    position: absolute;
+    z-index: 100;
+
+    /*display: none;*/
+    max-width: 350px;
+
+    color: #222222;
+
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px hsla(0,50%,0%,0.5);
+}
+
+.cell-popover-header {
+    padding: 10px;
+
+    color: hsl(198, 95%, 47%);
+    font-weight: bold;
+    background: #e3e3e3;
+}
+
+.cell-popover-body {
+    padding: 20px 10px;
+}
+
+.cell-popover-body a {
+    color: hsl(198, 95%, 47%);
+    text-decoration: underline;
+}
+
+.cell-popover-body a:hover {
+    text-decoration: none;
+}
+
+.cell-popover-body button,
+.cell-popover-body a.btn {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 40%;
+
+    border-radius: 5px;
+}
+
+/* REQUEST PAGE */
+.request-schedule {
+    list-style: none;
+}
+
+.request-schedule li + li {
+    /*border-top: 1px dotted hsl(0, 0%, 87%);*/
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.request-schedule__time {
+    margin-top: 0;
+}
+
+.request-schedule .custom-radio-checkbox {
+    display: inline-block;
+}
+
+.request-schedule__time input {
+    padding: 0 5px;
+}
+
+.form-period .form-control.datepicker {
+    display: inline-block;
+    width: 200px;
+}
+
+.form-group .validation-label {
+    display: none;
+}
+
+.form-group.has-error .validation-label {
+    display: inline-block;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+.form-group.has-error .form-control {
+    color: hsl(0, 0%, 33%);
+}
+
+
+
+/* FOOTER */
+.footer-wrapper {
+    bottom: 0;
+    position: absolute;
+
+    padding: 10px 0 10px 15px;
+    width: 100%;
+
+    color: hsl(0, 0%, 44%);
+
+    background: hsl(0, 100%, 100%);
+    border-top: 1px solid hsl(0, 0%, 87%);
+}
+
+.footer-wrapper .footer-email,
+.footer-wrapper .footer-phone {
+    padding: 5px 10px;
+}
+
+.footer-wrapper .footer-gaika {
+    margin: 15px auto 10px auto;
+
+    text-align: center;
+}
+
+.footer-wrapper .glyphicon {
+    margin-right: 10px;
+}
+
+.footer-wrapper a {
+    color: hsl(0, 0%, 44%);
+}
+
+.footer-wrapper .footer-copyright {
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.footer-wrapper .footer-copyright a {
+    color: hsl(198, 95%, 47%);
+    transition: color 0.1s ease-in 0s;
+}
+
+.footer-wrapper .footer-copyright p {
+    /*margin: 0;*/
+}
+
+aside.sidebarhidden .footer-wrapper a,
+aside.sidebarhidden .footer-wrapper p,
+aside.sidebarhidden .footer-wrapper span {
+    display: none;
+}
+
+/* PASSWORD CHANGE */
+.fg-password-strong { color: hsl(83, 84%, 41%); }
+.fg-password-normal { color: hsl(37, 90%, 51%); }
+.fg-password-weak   { color: hsl(0, 83%, 47%); }
+
+
+/* TABLE DOCUMENTS & GALLERY */
+.table.table-documents tr td,
+.table.table-gallery tr td {
+    vertical-align: middle;
+}
+
+.table.table-gallery tr td img {
+    max-width: 100%;
+}
+
+/* LOCATION CHANGE */
+.fg-admin-map-addr {
+    padding-right: 30px !important;
+}
+
+.fg-admin-map-container {
+    padding: 16px 20px;
+    width: 100%;
+}
+
+/* GOOGLE MAP */
+.google-map-admin {
+    display:block;
+    height:400px;
+    margin-left: 8px;
+    width:100%;
+
+    border: 1px solid hsl(60, 2%, 88%);
+}
+
+/* BREADCRUMBS */
+.breadcrumb {
+    margin-bottom: 0;
+    margin-top: -30px;
+    padding: 18px 20px;
+
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.breadcrumb a {
+    color: hsl(208, 56%, 53%);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,9 @@
+@media (max-width: 800px) {
+    .footer-wrapper {
+        position: static;
+    }
+    aside.sidebarhidden .footer-wrapper a,
+    aside.sidebarhidden .footer-wrapper span {
+        display: inline-block;
+    }
+}
